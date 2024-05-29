@@ -1,0 +1,17 @@
+# air.toml
+
+[env]
+# Set the GIN_MODE to development
+GIN_MODE = "development"
+
+[build]
+# Command to build your project
+cmd = "go build -o ./tmp/main ."
+# Directory to watch for changes
+root = "."
+# Directories or files to watch for changes
+include = [
+    "**/*.go",
+    "**/*.tmpl",
+    "**/*.html",
+]

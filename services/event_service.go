@@ -43,3 +43,4 @@ func GetEventByIDService(id uint) *models.Event {
     }
     return &event
 }
+
